@@ -1,4 +1,4 @@
-package UserManagement
+package UserManagementService
 
 import (
 	"github.com/gorilla/mux"

@@ -1,13 +1,15 @@
 package main
 
 import (
-	"../deliverit/UserManagement"
-	"./BillingService"
-	"deliverit/Analytics"
+	"./AnalyticsService"
+	"./RoutineObserverService"
+	"./RoutingService"
+	"./UserManagementService"
 )
 
 func main() {
-	UserManagement.StartServer()
-	Analytics.StartServer()
-	BillingService.StartServer()
+	UserManagementService.StartServer()
+	AnalyticsService.StartServer()
+	RoutingService.StartServer()
+	RoutineObserverService.StartServer()
 }
