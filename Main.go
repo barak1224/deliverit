@@ -1,8 +1,11 @@
 package main
 
 import (
-	"deliverit/UserManagement"
+	"../deliverit/Analytics"
+	"../deliverit/UserManagement"
 )
+
 func main() {
 	UserManagement.StartServer()
+	Analytics.StartServer()
 }
