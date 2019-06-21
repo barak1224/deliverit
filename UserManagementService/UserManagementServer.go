@@ -28,7 +28,7 @@ func setupRouter(router *mux.Router) {
 }
 
 func StartServer() {
-	log.Println("In main")
+	log.Println("In UserManagement main")
 	router := mux.NewRouter().StrictSlash(true)
 
 	setupRouter(router)

@@ -26,10 +26,10 @@ func setupRouter(router *mux.Router) {
 }
 
 func StartServer() {
-	log.Println("In main")
+	log.Println("In AnalyticsService main")
 	router := mux.NewRouter().StrictSlash(true)
 
 	setupRouter(router)
 
-	log.Fatal(http.ListenAndServe(":8080", router))
+	log.Fatal(http.ListenAndServe(":8085", router))
 }
