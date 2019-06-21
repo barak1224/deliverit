@@ -23,6 +23,10 @@ func setupRouter(router *mux.Router) {
 		Methods("PUT").
 		Path("/analytics/newFeedback").
 		HandlerFunc(insertNewFeedback)
+	router.
+		Methods("POST").
+		Path("/analytics/addShockData").
+		HandlerFunc(addShockData)
 }
 
 func StartServer() {
